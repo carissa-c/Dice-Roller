@@ -33,7 +33,6 @@ using System.Reflection;
                 Console.WriteLine("Invalid number. Please try again.");
             }
 
-
         }
         //Selecting random numbers
         static int getRandom(int s)
@@ -79,14 +78,16 @@ using System.Reflection;
         string response = Console.ReadLine();
         if (response == "y")
         {
+            restart = true;
             Console.WriteLine("Roll again!");
         }
         else if (response == "n")
         {
+            restart = false;
             Console.WriteLine("Goodbye!");
             break;
         }
-        else if (response != "y")
+        else
         {
             Console.WriteLine("Invalid response. Please try again.");
         }
